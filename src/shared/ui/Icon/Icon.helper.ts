@@ -5,18 +5,17 @@ import Expo from '#/assets/icons/Expo.svg';
 import Express from '#/assets/icons/Express.svg';
 import Github from '#/assets/icons/Github.svg';
 import Gmail from '#/assets/icons/Gmail.svg';
-import I18Next from '#/assets/icons/18Next.svg';
+import I18Next from '#/assets/icons/I18Next.svg';
 import JavaScript from '#/assets/icons/JavaScript.svg';
 import LightTheme from '#/assets/icons/LightTheme.svg';
-import Nest from '#/assets/icons/Nest.svg';
-import Next from '#/assets/icons/Next.svg';
-import NextTs from '#/assets/icons/NextTs.svg';
+import Nest from '#/assets/icons/NestJs.svg';
+import Next from '#/assets/icons/NextJs.svg';
 import NodeJs from '#/assets/icons/NodeJs.svg';
-import React from '#/assets/icons/React.svg';
+import ReactIcon from '#/assets/icons/React.svg';
 import ReactRouter from '#/assets/icons/ReactRouter.svg';
 import Redux from '#/assets/icons/Redux.svg';
 import Sass from '#/assets/icons/Sass.svg';
-import SocketDotLo from '#/assets/icons/SocketDotlo.svg';
+import SocketDotLo from '#/assets/icons/SocketDotIo.svg';
 import Telegram from '#/assets/icons/Telegram.svg';
 import TypeOrm from '#/assets/icons/TypeOrm.svg';
 import TypeScript from '#/assets/icons/TypeScript.svg';
@@ -34,9 +33,8 @@ export const icons: IIcons = {
   ['lighttheme']: LightTheme,
   ['nest']: Nest,
   ['next']: Next,
-  ['nextts']: NextTs,
   ['nodels']: NodeJs,
-  ['react']: React,
+  ['react']: ReactIcon,
   ['reactrouter']: ReactRouter,
   ['redux']: Redux,
   ['sass']: Sass,

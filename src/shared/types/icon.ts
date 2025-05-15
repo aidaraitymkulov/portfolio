@@ -14,7 +14,6 @@ export type IIconType =
   | "lighttheme"
   | "nest"
   | "next"
-  | "nextts"
   | "nodels"
   | "react"
   | "reactrouter"

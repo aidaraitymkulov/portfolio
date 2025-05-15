@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import '@/styles/index.scss';
+import "@/styles/index.scss";
+import { Header } from "@/shared/ui/Header";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -21,7 +22,10 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

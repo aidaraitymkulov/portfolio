@@ -1,0 +1,42 @@
+.switcher {
+  width: 60px;
+  height: 34px;
+  background: #ccc;
+  border-radius: 17px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.toggle {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.light {
+  transform: translateX(0);
+}
+
+.dark {
+  transform: translateX(26px);
+  background: #333;
+}
+
+.switcher:hover {
+  background: #bbb;
+}

@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import styles from './Styles.module.scss';
+import { ThemeSwitcher } from './ThemeSwitcher';
 
 interface IProps {}
 
@@ -8,7 +8,7 @@ export const Header = ({}: IProps) => {
         <header className={styles.header} id='header'>
             <div className='container'>
                 <div className={styles.headerContent}>
-                    <Image />
+                    <ThemeSwitcher />
                 </div>
             </div>
         </header>
