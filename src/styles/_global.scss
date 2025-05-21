@@ -1,6 +1,15 @@
 .container {
-    max-width: 1240px;
-    padding: 0 20px;
-    margin: 0 auto;
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
+body {
+  font-family: --var(--font-family);
+  background-color: var(--theme-dark);
+  transition: background-color 0.3s ease;
+}
+
+body.dark {
+  background-color: var(--theme-light);
+}
