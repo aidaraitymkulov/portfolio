@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 export async function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "ru" }, { locale: "kg" }];
+  return [{ locale: "en" }, { locale: "ru" },];
 }
 
 export default async function RootLayout({
@@ -20,7 +20,7 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }) {
   const { locale } = await params;
   if (!routing.locales.includes(locale as Locale)) {
