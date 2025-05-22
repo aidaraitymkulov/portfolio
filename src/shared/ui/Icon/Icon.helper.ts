@@ -11,7 +11,7 @@ import LightTheme from '#/assets/icons/LightTheme.svg';
 import Nest from '#/assets/icons/NestJs.svg';
 import Next from '#/assets/icons/NextJs.svg';
 import NodeJs from '#/assets/icons/NodeJs.svg';
-import ReactIcon from '#/assets/icons/React.svg';
+import ReactIcon from '#/assets/icons/ReactIcon.svg';
 import ReactRouter from '#/assets/icons/ReactRouter.svg';
 import Redux from '#/assets/icons/Redux.svg';
 import Sass from '#/assets/icons/Sass.svg';
