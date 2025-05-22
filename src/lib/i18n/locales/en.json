@@ -3,9 +3,11 @@
     "title": "Portfolio",
     "description": "Portfolio of a web developer"
   },
-  "language": {
-    "english": "English",
-    "russian": "Russian",
-    "kyrgyz": "Kyrgyz"
+    "header": {
+    "head": "Home",
+    "about": "About me",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contacts"
   }
 }
