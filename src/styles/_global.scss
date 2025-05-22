@@ -5,9 +5,10 @@
 }
 
 body {
-  font-family: --var(--font-family);
+  font-family: var(--font-family);
   background-color: var(--theme-dark);
   transition: background-color 0.3s ease;
+  color: var(--text-white);
 }
 
 body.dark {

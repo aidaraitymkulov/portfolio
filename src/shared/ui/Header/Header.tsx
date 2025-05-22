@@ -5,15 +5,15 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
 import { Icon } from "../Icon";
 import { getTranslations } from "next-intl/server";
 
-export const Header = async() => {
+export const Header = async () => {
   const t = await getTranslations("header");
 
   const navItems = [
-    { href: "/", label: t("head") }, 
-    { href: "/about", label: t("about") }, 
-    { href: "/experience", label: t("experience") }, 
-    { href: "/projects", label: t("projects") }, 
-    { href: "/contact", label: t("contact") }, 
+    { href: "/", label: t("head") },
+    { href: "/abot", label: t("about") },
+    { href: "/expirience", label: t("experience") },
+    { href: "/projects", label: t("projects") },
+    { href: "/contact", label: t("contact") },
   ];
 
   return (
@@ -22,22 +22,24 @@ export const Header = async() => {
         <div className={styles.headerContent}>
           <div className={styles.logo}>
             <Link href="/">
-              <Icon type="next" alt="logo" width={30} height={30} />
+              <Icon type="next" alt="logo" width={60} height={60} />
             </Link>
           </div>
           <nav className={styles.nav}>
             <ul className={styles.list}>
-              <li>
-                <Link href={"/"} className={styles.link}></Link>
-                <Link href={"/"} className={styles.link}></Link>
-                <Link href={"/"} className={styles.link}></Link>
-                <Link href={"/"} className={styles.link}></Link>
-                <Link href={"/"} className={styles.link}></Link>
-              </li>
+              {navItems.map(({ href, label }) => (
+                <li key={href}>
+                  <Link href={href} className={styles.link}>
+                    {label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </nav>
-          <ThemeSwitcher />
-          <LanguageSwitcher />
+          <div className={styles.switchers}>
+            <ThemeSwitcher />
+            <LanguageSwitcher />
+          </div>
         </div>
       </div>
     </header>
